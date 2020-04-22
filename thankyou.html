@@ -1,0 +1,30 @@
+<html>
+<style>
+  .thumb {
+    max-width:100px;
+    max-height:100px;
+  }
+  body {
+    background-color: black;
+  }
+</style>
+
+
+
+<body>
+
+
+</body>
+<script>
+  const users = ["octocat", "github"]
+  users.forEach(function (user){
+    var img = document.createElement("img");
+    img.src = "https://github.com/" + user + ".png";
+    img.classList.add("thumb");
+    document.body.appendChild(img)
+  });
+
+</script>
+
+
+</html>
