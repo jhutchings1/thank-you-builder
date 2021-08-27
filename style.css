@@ -1,0 +1,49 @@
+:root {
+  --avatarSize:50px;
+}
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  background-color: var(--color-bg-canvas-mobile);
+  padding:20px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  width: 250px;
+}
+
+.person .avatar {
+  width: var(--avatarSize);
+  height: var(--avatarSize);
+  display: block;
+  border-radius: calc(var(--avatarSize)/2);
+  border: 2px solid var(--color-text-primary);
+  box-sizing: border-box;
+  margin: calc(var(--avatarSize)/5);
+}
+
+.person .name {
+  font-family: Alliance, Inter, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.square-grid .person {
+  width: inherit;
+  margin: 0;
+}
+
+.square-grid .avatar {
+  border-radius: 0;
+  border: none;
+  margin: 0;
+}
+
+.square-grid .name {
+  display: none;
+}

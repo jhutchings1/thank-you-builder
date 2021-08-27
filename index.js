@@ -16,6 +16,23 @@ document.addEventListener('DOMContentLoaded', function () {
     people.classList.toggle('square-grid');
   });
 
+  const toggleColor = document.getElementById('toggleColor');
+  toggleColor.addEventListener('click', function() {
+    var htmlElement = document.getElementsByTagName("html")[0];
+    var dataColorMode = htmlElement.getAttribute("data-color-mode");
+    if (dataColorMode == "dark") {
+      htmlElement.setAttribute("data-color-mode", "light");
+    } else {
+      htmlElement.setAttribute("data-color-mode", "dark");
+    }
+  });
+
+  const avatarSize = document.getElementById('avatarSize');
+  avatarSize.addEventListener('change', function() {
+    var rootElement = document.querySelector(':root');
+    rootElement.style.setProperty('--avatarSize', avatarSize.value + "px")
+  });
+
   const handlesInput = document.getElementById('handles-input');
   const updateAvatars = () => {
     const handles = handlesInput.value
