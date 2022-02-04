@@ -6,7 +6,8 @@
   flex-wrap: wrap;
   margin: 30px;
   background-color: var(--color-bg-canvas-mobile);
-  padding:20px;
+  padding:10px;
+  justify-content: space-between;
 }
 
 .person {
@@ -14,7 +15,7 @@
   align-items: center;
   flex-direction: column;
   margin: 20px;
-  width: 250px;
+  width: 200px;
 }
 
 .person .avatar {
@@ -29,8 +30,8 @@
 
 .person .name {
   font-family: Alliance, Inter, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 28px;
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
 .square-grid .person {
